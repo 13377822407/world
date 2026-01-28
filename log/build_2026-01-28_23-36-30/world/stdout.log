@@ -1,6 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target keyboard_teleop[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/odom_publisher.dir/src/odom_publisher.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o[0m
-[ 66%] [32m[1mLinking CXX executable odom_publisher[0m
-[ 66%] Built target odom_publisher

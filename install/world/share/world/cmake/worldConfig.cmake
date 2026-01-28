@@ -1,1 +1,0 @@
-/home/hax/world/build/world/ament_cmake_core/worldConfig.cmake

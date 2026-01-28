@@ -1,4 +1,0 @@
-Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
-Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
-Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world
-Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world
