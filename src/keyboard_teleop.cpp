@@ -1,26 +1,3 @@
-/**
- * @file teleop_keyboard.cpp
- * @brief 键盘遥控节点 - 通过键盘控制机器人移动
- * 
- * 功能说明：
- * 1. 监听键盘输入
- * 2. 根据按键发送相应的速度命令到/cmd_vel话题
- * 3. 支持加速、减速、转向、紧急停止等功能
- * 
- * 按键映射：
- * - w/s : 增加/减少前进速度
- * - a/d : 增加/减少转向速度（左转/右转）
- * - x   : 后退
- * - 空格: 紧急停止
- * - q   : 退出程序
- * 
- * 学习要点：
- * - 如何处理Linux终端的键盘输入
- * - 如何在循环中发布消息
- * - 速度控制的平滑增减逻辑
- * - 安全停止机制
- */
-
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include <iostream>
@@ -28,14 +5,6 @@
 #include <unistd.h>   // UNIX标准函数
 #include <fcntl.h>    // 文件控制
 
-/**
- * @brief 获取单个按键输入（非阻塞）
- * 
- * 在Linux系统中，终端默认是行缓冲模式，需要按回车才能读取输入。
- * 这个函数将终端设置为原始模式（raw mode），可以立即读取单个字符。
- * 
- * @return char 按下的键，如果没有按键则返回0
- */
 char getch()
 {
     char buf = 0;
@@ -76,11 +45,6 @@ char getch()
 class TeleopKeyboard : public rclcpp::Node
 {
 public:
-    /**
-     * @brief 构造函数
-     * 
-     * 初始化节点、发布者和速度参数
-     */
     TeleopKeyboard() : Node("teleop_keyboard")
     {
         // 创建发布者
@@ -101,14 +65,8 @@ public:
         RCLCPP_INFO(this->get_logger(), "===================================");
         RCLCPP_INFO(this->get_logger(), "  键盘遥控节点已启动");
         RCLCPP_INFO(this->get_logger(), "===================================");
-        print_usage();
     }
     
-    /**
-     * @brief 运行主循环
-     * 
-     * 持续监听键盘输入并发布速度命令
-     */
     void run()
     {
         char key;
@@ -198,9 +156,9 @@ public:
                 
                 // 显示当前速度
                 if (key != 'h' && key != 'H' && key != 'q' && key != 'Q') {
-                    LCPP_INFO(this->get_logger(), 
-                               "当前速度 -> 线速度: %.2f m/s, 角速度: %.2f rad/s",
-                               linear_vel_, angular_vel_);
+                    RCLCPP_INFO(this->get_logger(), 
+                                "当前速度 -> 线速度: %.2f m/s, 角速度: %.2f rad/s",
+                                linear_vel_, angular_vel_);
                 }
             }
             
@@ -209,31 +167,31 @@ public:
         }
     }
 
+            /**
+             * @brief 打印使用说明
+             */
+            void print_usage()
+            {
+                RCLCPP_INFO(this->get_logger(), "");
+                RCLCPP_INFO(this->get_logger(), "控制说明:");
+                RCLCPP_INFO(this->get_logger(), "-----------------------------------");
+                RCLCPP_INFO(this->get_logger(), "  W : 前进加速");
+                RCLCPP_INFO(this->get_logger(), "  S : 减速");
+                RCLCPP_INFO(this->get_logger(), "  X : 后退");
+                RCLCPP_INFO(this->get_logger(), "  A : 左转");
+                RCLCPP_INFO(this->get_logger(), "  D : 右转");
+                RCLCPP_INFO(this->get_logger(), "  空格 : 紧急停止");
+                RCLCPP_INFO(this->get_logger(), "  H : 显示此帮助");
+                RCLCPP_INFO(this->get_logger(), "  Q : 退出程序");
+                RCLCPP_INFO(this->get_logger(), "-----------------------------------");
+                RCLCPP_INFO(this->get_logger(), "速度限制:");
+                RCLCPP_INFO(this->get_logger(), "  最大线速度: %.2f m/s", max_linear_vel_);
+                RCLCPP_INFO(this->get_logger(), "  最大角速度: %.2f rad/s", max_angular_vel_);
+                RCLCPP_INFO(this->get_logger(), "-----------------------------------");
+                RCLCPP_INFO(this->get_logger(), "");
+            }
+
 private:
-    /**
-     * @brief 打印使用说明
-     */
-    void print_usage()
-    {
-        RCLCPP_INFO(this->get_logger(), "");
-        RCLCPP_INFO(this->get_logger(), "控制说明:");
-        RCLCPP_INFO(this->get_logger(), "-----------------------------------");
-        RCLCPP_INFO(this->get_logger(), "  W : 前进加速");
-        RCLCPP_INFO(this->get_logger(), "  S : 减速");
-        RCLCPP_INFO(this->get_logger(), "  X : 后退");
-        RCLCPP_INFO(this->get_logger(), "  A : 左转");
-        RCLCPP_INFO(this->get_logger(), "  D : 右转");
-        RCLCPP_INFO(this->get_logger(), "  空格 : 紧急停止");
-        RCLCPP_INFO(this->get_logger(), "  H : 显示此帮助");
-        RCLCPP_INFO(this->get_logger(), "  Q : 退出程序");
-        RCLCPP_INFO(this->get_logger(), "-----------------------------------");
-        RCLCPP_INFO(this->get_logger(), "速度限制:");
-        RCLCPP_INFO(this->get_logger(), "  最大线速度: %.2f m/s", max_linear_vel_);
-        RCLCPP_INFO(this->get_logger(), "  最大角速度: %.2f rad/s", max_angular_vel_);
-        RCLCPP_INFO(this->get_logger(), "-----------------------------------");
-        RCLCPP_INFO(this->get_logger(), "");
-    }
-    
     // 成员变量
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
     
@@ -248,9 +206,6 @@ private:
     double max_angular_vel_;   ///< 最大角速度
 };
 
-/**
- * @brief 主函数
- */
 int main(int argc, char * argv[])
 {
     // 初始化ROS2

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hax/world/build/world/odom_publisher" "/home/hax/world/build/world/imu_publisher" "/home/hax/world/build/world/keyboard_teleop" "TARGETS" "odom_publisher" "imu_publisher" "keyboard_teleop" "DESTINATION" "lib/world")

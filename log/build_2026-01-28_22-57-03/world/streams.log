@@ -1,0 +1,93 @@
+[0.010s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hax/world -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world
+[0.016s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.100s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.106s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.355s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.356s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.408s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.409s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.409s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.409s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.535s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.570s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[9.578s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[9.588s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.598s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[9.601s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[9.696s] -- Configuring done
+[9.709s] -- Generating done
+[9.716s] -- Build files have been written to: /home/hax/world/build/world
+[9.725s] Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hax/world -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world
+[9.726s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
+[9.741s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[9.826s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.830s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[10.091s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[10.093s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[10.097s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[10.105s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.113s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.134s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[10.135s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[19.096s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[19.127s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[19.134s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[19.144s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[19.154s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[19.157s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[19.252s] -- Configuring done
+[19.264s] -- Generating done
+[19.270s] -- Build files have been written to: /home/hax/world/build/world
+[19.288s] [35m[1mConsolidate compiler generated dependencies of target keyboard_teleop[0m
+[19.288s] [35m[1mConsolidate compiler generated dependencies of target odom_publisher[0m
+[19.288s] [35m[1mConsolidate compiler generated dependencies of target imu_publisher[0m
+[19.299s] [ 16%] [32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o[0m
+[19.299s] [ 33%] [32m[1mLinking CXX executable odom_publisher[0m
+[19.299s] [ 50%] [32m[1mLinking CXX executable imu_publisher[0m
+[19.548s] [ 66%] Built target imu_publisher
+[19.705s] [ 83%] Built target odom_publisher
+[20.934s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[20.934s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[20.934s]                  from [01m[K/home/hax/world/src/keyboard_teleop.cpp:1[m[K:
+[20.934s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:[m[K In member function ‘[01m[Kvoid TeleopKeyboard::print_usage()[m[K’:
+[20.934s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:187:41:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[20.934s]   187 |         RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+[20.934s]       |                                         [01;35m[K^~[m[K
+[20.935s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:203:41:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[20.935s]   203 |         RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+[20.935s]       |                                         [01;35m[K^~[m[K
+[22.332s] [100%] [32m[1mLinking CXX executable keyboard_teleop[0m
+[22.556s] [100%] Built target keyboard_teleop
+[22.576s] Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
+[22.583s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world
+[22.586s] -- Install configuration: ""
+[22.587s] -- Execute custom install script
+[22.588s] -- Symlinking: /home/hax/world/install/world/lib/world/odom_publisher
+[22.593s] -- Symlinking: /home/hax/world/install/world/lib/world/imu_publisher
+[22.598s] -- Symlinking: /home/hax/world/install/world/lib/world/keyboard_teleop
+[22.604s] -- Symlinking: /home/hax/world/install/world/share/ament_index/resource_index/package_run_dependencies/world
+[22.610s] -- Symlinking: /home/hax/world/install/world/share/ament_index/resource_index/parent_prefix_path/world
+[22.616s] -- Symlinking: /home/hax/world/install/world/share/world/environment/ament_prefix_path.sh
+[22.621s] -- Symlinking: /home/hax/world/install/world/share/world/environment/ament_prefix_path.dsv
+[22.625s] -- Symlinking: /home/hax/world/install/world/share/world/environment/path.sh
+[22.630s] -- Symlinking: /home/hax/world/install/world/share/world/environment/path.dsv
+[22.634s] -- Symlinking: /home/hax/world/install/world/share/world/local_setup.bash
+[22.639s] -- Symlinking: /home/hax/world/install/world/share/world/local_setup.sh
+[22.644s] -- Symlinking: /home/hax/world/install/world/share/world/local_setup.zsh
+[22.649s] -- Symlinking: /home/hax/world/install/world/share/world/local_setup.dsv
+[22.654s] -- Symlinking: /home/hax/world/install/world/share/world/package.dsv
+[22.659s] -- Symlinking: /home/hax/world/install/world/share/ament_index/resource_index/packages/world
+[22.664s] -- Symlinking: /home/hax/world/install/world/share/world/cmake/worldConfig.cmake
+[22.669s] -- Symlinking: /home/hax/world/install/world/share/world/cmake/worldConfig-version.cmake
+[22.675s] -- Symlinking: /home/hax/world/install/world/share/world/package.xml
+[22.681s] Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world

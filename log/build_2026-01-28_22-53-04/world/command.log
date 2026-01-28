@@ -1,0 +1,2 @@
+Invoking command in '/home/hax/world/build/world': /usr/bin/cmake /home/hax/world -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world
+Invoked command in '/home/hax/world/build/world' returned '1': /usr/bin/cmake /home/hax/world -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world

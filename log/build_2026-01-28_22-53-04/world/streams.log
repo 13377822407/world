@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/home/hax/world/build/world': /usr/bin/cmake /home/hax/world -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world
+[0.285s] -- The C compiler identification is GNU 11.4.0
+[0.994s] -- The CXX compiler identification is GNU 11.4.0
+[1.519s] -- Detecting C compiler ABI info
+[1.692s] -- Detecting C compiler ABI info - done
+[1.696s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.697s] -- Detecting C compile features
+[1.698s] -- Detecting C compile features - done
+[1.702s] -- Detecting CXX compiler ABI info
+[1.876s] -- Detecting CXX compiler ABI info - done
+[1.880s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.881s] -- Detecting CXX compile features
+[1.881s] -- Detecting CXX compile features - done
+[4.108s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[4.108s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[4.108s]   has asked CMake to find a package configuration file provided by
+[4.108s]   "ament_cmake", but CMake did not find one.
+[4.108s] 
+[4.109s]   Could not find a package configuration file provided by "ament_cmake" with
+[4.109s]   any of the following names:
+[4.109s] 
+[4.109s]     ament_cmakeConfig.cmake
+[4.109s]     ament_cmake-config.cmake
+[4.109s] 
+[4.109s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[4.109s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[4.109s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[4.109s]   has been installed.
+[4.109s] 
+[4.109s] [0m
+[4.109s] -- Configuring incomplete, errors occurred!
+[4.109s] See also "/home/hax/world/build/world/CMakeFiles/CMakeOutput.log".
+[4.111s] Invoked command in '/home/hax/world/build/world' returned '1': /usr/bin/cmake /home/hax/world -DCMAKE_INSTALL_PREFIX=/home/hax/world/install/world

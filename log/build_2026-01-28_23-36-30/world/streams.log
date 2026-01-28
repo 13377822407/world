@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target keyboard_teleop[0m
+[0.095s] [ 16%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[0.096s] [ 33%] [32mBuilding CXX object CMakeFiles/odom_publisher.dir/src/odom_publisher.cpp.o[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o[0m
+[2.143s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:[m[K In member function ‘[01m[Kvoid TeleopKeyboard::run()[m[K’:
+[2.143s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:149:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_usage[m[K’ was not declared in this scope
+[2.143s]   149 |                         [01;31m[Kprint_usage[m[K();
+[2.143s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.172s] [01m[K/home/hax/world/src/imu_publisher.cpp:[m[K In member function ‘[01m[Kvoid ImuPublisher::timer_callback()[m[K’:
+[2.172s] [01m[K/home/hax/world/src/imu_publisher.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+[2.172s]    35 |     [01;31m[Kimu[m[K.linear_acceleration.x = accel_noise_dist_(gen_);
+[2.172s]       |     [01;31m[K^~~[m[K
+[2.778s] gmake[2]: *** [CMakeFiles/keyboard_teleop.dir/build.make:76: CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o] Error 1
+[2.778s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyboard_teleop.dir/all] Error 2
+[2.778s] gmake[1]: *** Waiting for unfinished jobs....
+[2.819s] gmake[2]: *** [CMakeFiles/imu_publisher.dir/build.make:76: CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o] Error 1
+[2.819s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/imu_publisher.dir/all] Error 2
+[6.664s] [ 66%] [32m[1mLinking CXX executable odom_publisher[0m
+[7.159s] [ 66%] Built target odom_publisher
+[7.159s] gmake: *** [Makefile:146: all] Error 2
+[7.162s] Invoked command in '/home/hax/world/build/world' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16

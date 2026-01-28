@@ -1,0 +1,28 @@
+[01m[K/home/hax/world/src/keyboard_teleop.cpp:[m[K In member function ‘[01m[Kvoid TeleopKeyboard::run()[m[K’:
+[01m[K/home/hax/world/src/keyboard_teleop.cpp:170:21:[m[K [01;31m[Kerror: [m[K‘[01m[KLCPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+  170 |                     [01;31m[KLCPP_INFO[m[K(this->get_logger(),
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                     [32m[KRCLCPP_INFO[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hax/world/src/keyboard_teleop.cpp:1[m[K:
+[01m[K/home/hax/world/src/keyboard_teleop.cpp:[m[K In member function ‘[01m[Kvoid TeleopKeyboard::print_usage()[m[K’:
+[01m[K/home/hax/world/src/keyboard_teleop.cpp:187:41:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  187 |         RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+      |                                         [01;35m[K^~[m[K
+[01m[K/home/hax/world/src/keyboard_teleop.cpp:203:41:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+  203 |         RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+      |                                         [01;35m[K^~[m[K
+gmake[2]: *** [CMakeFiles/keyboard_teleop.dir/build.make:76: CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyboard_teleop.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

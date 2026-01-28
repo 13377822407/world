@@ -1,0 +1,53 @@
+[0.013s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target imu_publisher[0m
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target keyboard_teleop[0m
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target odom_publisher[0m
+[0.102s] [ 16%] [32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o[0m
+[0.102s] [ 50%] Built target odom_publisher
+[0.103s] [ 66%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[2.231s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.231s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.231s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.231s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.232s]                  from [01m[K/home/hax/world/src/keyboard_teleop.cpp:1[m[K:
+[2.232s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:[m[K In member function ‘[01m[Kvoid TeleopKeyboard::print_usage()[m[K’:
+[2.232s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:175:49:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.232s]   175 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+[2.232s]       |                                                 [01;35m[K^~[m[K
+[2.233s] [01m[K/home/hax/world/src/keyboard_teleop.cpp:191:49:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+[2.233s]   191 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K""[m[K);
+[2.233s]       |                                                 [01;35m[K^~[m[K
+[3.751s] [100%] [32m[1mLinking CXX executable keyboard_teleop[0m
+[3.751s] [100%] [32m[1mLinking CXX executable imu_publisher[0m
+[4.006s] [100%] Built target keyboard_teleop
+[4.009s] [100%] Built target imu_publisher
+[4.017s] Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hax/world/build/world -- -j16 -l16
+[4.025s] Invoking command in '/home/hax/world/build/world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world
+[4.031s] -- Install configuration: ""
+[4.032s] -- Execute custom install script
+[4.033s] -- Up-to-date symlink: /home/hax/world/install/world/lib/world/odom_publisher
+[4.033s] -- Up-to-date symlink: /home/hax/world/install/world/lib/world/imu_publisher
+[4.033s] -- Up-to-date symlink: /home/hax/world/install/world/lib/world/keyboard_teleop
+[4.033s] -- Up-to-date symlink: /home/hax/world/install/world/share/ament_index/resource_index/package_run_dependencies/world
+[4.034s] -- Up-to-date symlink: /home/hax/world/install/world/share/ament_index/resource_index/parent_prefix_path/world
+[4.034s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/environment/ament_prefix_path.sh
+[4.034s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/environment/ament_prefix_path.dsv
+[4.034s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/environment/path.sh
+[4.035s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/environment/path.dsv
+[4.035s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/local_setup.bash
+[4.035s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/local_setup.sh
+[4.036s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/local_setup.zsh
+[4.036s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/local_setup.dsv
+[4.036s] -- Symlinking: /home/hax/world/install/world/share/world/package.dsv
+[4.043s] -- Up-to-date symlink: /home/hax/world/install/world/share/ament_index/resource_index/packages/world
+[4.043s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/cmake/worldConfig.cmake
+[4.043s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/cmake/worldConfig-version.cmake
+[4.044s] -- Up-to-date symlink: /home/hax/world/install/world/share/world/package.xml
+[4.045s] Invoked command in '/home/hax/world/build/world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hax/world/build/world

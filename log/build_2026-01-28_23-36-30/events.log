@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000442] (world) JobQueued: {'identifier': 'world', 'dependencies': OrderedDict()}
+[0.000479] (world) JobStarted: {'identifier': 'world'}
+[0.010015] (world) JobProgress: {'identifier': 'world', 'progress': 'cmake'}
+[0.011518] (world) JobProgress: {'identifier': 'world', 'progress': 'build'}
+[0.011715] (world) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hax/world/build/world', '--', '-j16', '-l16'], 'cwd': '/home/hax/world/build/world', 'env': OrderedDict([('USER', 'hax'), ('GIT_ASKPASS', '/home/hax/.vscode-server/bin/585eba7c0c34fd6b30faac7c62a42050bfbc0086/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/hax'), ('OLDPWD', '/home/hax/world'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a29b058d-3ef4-4c8b-8634-965040c15c8e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hax/.vscode-server/bin/585eba7c0c34fd6b30faac7c62a42050bfbc0086/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hax/.vscode-server/bin/585eba7c0c34fd6b30faac7c62a42050bfbc0086/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hax/world/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hax'), ('NAME', 'DESKTOP-ONI1CG0'), ('WSL_INTEROP', '/run/WSL/358_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/opt/ros/humble/bin:/home/hax/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/hax/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/hax/.vscode-server/bin/585eba7c0c34fd6b30faac7c62a42050bfbc0086/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win32_i86:/mnt/c/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64:/mnt/c/Python313/Scripts/:/mnt/c/Python313/:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/e/vmware/bin/:/mnt/e/python3.9.5/Scripts/:/mnt/e/python3.9.5/:/mnt/c/Windows/System32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Administrator/AppData/Local/Microsoft/WindowsApps:/mnt/c/Recovery/OEM/Backup/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/e/cmake-4.0.1-windows-x86_64/bin:/mnt/e/mingw64/bin:/mnt/e/qt5.14.1/Tools/mingw730_64:/mnt/e/qt5.14.1/5.14.1/mingw73_64/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/e/anaconda:/mnt/e/anaconda/Scripts:/mnt/e/anaconda/Library/bin:/mnt/e/anaconda/Library/mingw-w64/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/lib/x64:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0:/mnt/e/ffmpeg-master-latest-win64-gpl-shared/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/e/Snipaste-2.7.3-Beta-x64:/mnt/e/opencv4.9/build/install/x64/vc16/bin:/mnt/e/nodejs/:/mnt/e/matlab/matlab/runtime/win64:/mnt/e/matlab/matlab/bin:/mnt/c/Program Files/Go/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/e/Redis-x64-5.0.14.1:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MVTec/HALCON-24.11-Progress-Steady/bin/x64-win64:/mnt/c/Users/hax/AppData/Local/Microsoft/WindowsApps:/mnt/e/cursor/cursor/resources/app/bin:/mnt/c/Users/hax/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/e/pycharm/PyCharm 2024.1/bin:/mnt/c/Users/hax/AppData/Roaming/npm:/mnt/c/Users/hax/go/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-hax'), ('DISPLAY', '127.0.0.1:0'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cdd927004e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/hax/world/install/world:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/hax/world/build/world'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/hax/world/install/world:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.089042] (world) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target keyboard_teleop\x1b[0m\n'}
+[0.095798] (world) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o\x1b[0m\n'}
+[0.095971] (world) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/odom_publisher.dir/src/odom_publisher.cpp.o\x1b[0m\n'}
+[0.099452] (world) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o\x1b[0m\n'}
+[0.099812] (-) TimerEvent: {}
+[0.200249] (-) TimerEvent: {}
+[0.300606] (-) TimerEvent: {}
+[0.401014] (-) TimerEvent: {}
+[0.501445] (-) TimerEvent: {}
+[0.601803] (-) TimerEvent: {}
+[0.702221] (-) TimerEvent: {}
+[0.802732] (-) TimerEvent: {}
+[0.903533] (-) TimerEvent: {}
+[1.003983] (-) TimerEvent: {}
+[1.104476] (-) TimerEvent: {}
+[1.204946] (-) TimerEvent: {}
+[1.305349] (-) TimerEvent: {}
+[1.405753] (-) TimerEvent: {}
+[1.506223] (-) TimerEvent: {}
+[1.606716] (-) TimerEvent: {}
+[1.707090] (-) TimerEvent: {}
+[1.807615] (-) TimerEvent: {}
+[1.907995] (-) TimerEvent: {}
+[2.008361] (-) TimerEvent: {}
+[2.108691] (-) TimerEvent: {}
+[2.142755] (world) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hax/world/src/keyboard_teleop.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TeleopKeyboard::run()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.143291] (world) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hax/world/src/keyboard_teleop.cpp:149:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprint_usage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.143505] (world) StderrLine: {'line': b'  149 |                         \x1b[01;31m\x1b[Kprint_usage\x1b[m\x1b[K();\n'}
+[2.143625] (world) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.172340] (world) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hax/world/src/imu_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ImuPublisher::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.172659] (world) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hax/world/src/imu_publisher.cpp:35:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.172777] (world) StderrLine: {'line': b'   35 |     \x1b[01;31m\x1b[Kimu\x1b[m\x1b[K.linear_acceleration.x = accel_noise_dist_(gen_);\n'}
+[2.172841] (world) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.208913] (-) TimerEvent: {}
+[2.309405] (-) TimerEvent: {}
+[2.409774] (-) TimerEvent: {}
+[2.510143] (-) TimerEvent: {}
+[2.610526] (-) TimerEvent: {}
+[2.711005] (-) TimerEvent: {}
+[2.778006] (world) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/keyboard_teleop.dir/build.make:76: CMakeFiles/keyboard_teleop.dir/src/keyboard_teleop.cpp.o] Error 1\n'}
+[2.778481] (world) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyboard_teleop.dir/all] Error 2\n'}
+[2.778628] (world) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.811149] (-) TimerEvent: {}
+[2.819615] (world) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imu_publisher.dir/build.make:76: CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o] Error 1\n'}
+[2.819863] (world) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/imu_publisher.dir/all] Error 2\n'}
+[2.911315] (-) TimerEvent: {}
+[3.011745] (-) TimerEvent: {}
+[3.112206] (-) TimerEvent: {}
+[3.212611] (-) TimerEvent: {}
+[3.312909] (-) TimerEvent: {}
+[3.413260] (-) TimerEvent: {}
+[3.513556] (-) TimerEvent: {}
+[3.613902] (-) TimerEvent: {}
+[3.714223] (-) TimerEvent: {}
+[3.814700] (-) TimerEvent: {}
+[3.915133] (-) TimerEvent: {}
+[4.015687] (-) TimerEvent: {}
+[4.116005] (-) TimerEvent: {}
+[4.216410] (-) TimerEvent: {}
+[4.316723] (-) TimerEvent: {}
+[4.417044] (-) TimerEvent: {}
+[4.517351] (-) TimerEvent: {}
+[4.617695] (-) TimerEvent: {}
+[4.718016] (-) TimerEvent: {}
+[4.818329] (-) TimerEvent: {}
+[4.918865] (-) TimerEvent: {}
+[5.019204] (-) TimerEvent: {}
+[5.119580] (-) TimerEvent: {}
+[5.219998] (-) TimerEvent: {}
+[5.320300] (-) TimerEvent: {}
+[5.420584] (-) TimerEvent: {}
+[5.520894] (-) TimerEvent: {}
+[5.621335] (-) TimerEvent: {}
+[5.721659] (-) TimerEvent: {}
+[5.822202] (-) TimerEvent: {}
+[5.922665] (-) TimerEvent: {}
+[6.023159] (-) TimerEvent: {}
+[6.123474] (-) TimerEvent: {}
+[6.224090] (-) TimerEvent: {}
+[6.324430] (-) TimerEvent: {}
+[6.424776] (-) TimerEvent: {}
+[6.525112] (-) TimerEvent: {}
+[6.625500] (-) TimerEvent: {}
+[6.664472] (world) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable odom_publisher\x1b[0m\n'}
+[6.725628] (-) TimerEvent: {}
+[6.826004] (-) TimerEvent: {}
+[6.926302] (-) TimerEvent: {}
+[7.026628] (-) TimerEvent: {}
+[7.126994] (-) TimerEvent: {}
+[7.159111] (world) StdoutLine: {'line': b'[ 66%] Built target odom_publisher\n'}
+[7.159878] (world) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.162658] (world) CommandEnded: {'returncode': 2}
+[7.181369] (world) JobEnded: {'identifier': 'world', 'rc': 2}
+[7.192044] (-) EventReactorShutdown: {}
